@@ -18,7 +18,17 @@ This application use jUnit4 for Unit testing, bellow are the cases used in the t
 ```
 
 ```
-partition([1,2,3,4,5], 3) return: [ [1,2,3], [4,5] ]
-partition([1,2,3,4,5], 1) return: [ [1], [2], [3], [4], [5] ]
-partition([1,2,3,4,5,6], 2) return: [ [1,2], [3,4], [5,6] ]
+> java net.adneom.test.Application 3 1 2 3 4 5 
+[ [1,2,3], [4,5] ]
 ```
+
+```
+> java net.adneom.test.Application 1 1 2 3 4 5 
+[ [1], [2], [3], [4], [5] ]
+```
+
+```
+> java net.adneom.test.Application 2 1 2 3 4 5 6 
+[ [1,2], [3,4], [5,6] ]
+```
+
