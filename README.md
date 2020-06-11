@@ -32,3 +32,8 @@ This application use jUnit4 for Unit testing, bellow are the cases used in the t
 [ [1,2], [3,4], [5,6] ]
 ```
 
+To run the Application using maven, use the command bellow:
+
+```
+mvn exec:java -Dexec.mainClass="net.adneom.test.Application" -Dexec.args="2 1 2 3 5 4 8"
+```
