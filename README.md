@@ -2,7 +2,7 @@
 To use this application, use the command bellow:
 
 ```
-java net.adneom.test.Application [size] [elements...]
+java -cp ./target/classes net.adneom.test.Application [size] [elements...]
 ```
 
 - size: should be an Integer
@@ -13,22 +13,22 @@ There are some conditions in the main method to test if the size is not null, no
 This application use jUnit4 for Unit testing, bellow are the cases used in the tests:
 
 ```
-> java net.adneom.test.Application 2 1 2 3 4 5 
+> java -cp ./target/classes net.adneom.test.Application 2 1 2 3 4 5 
 [ [1,2], [3,4], [5] ]
 ```
 
 ```
-> java net.adneom.test.Application 3 1 2 3 4 5 
+> java -cp ./target/classes net.adneom.test.Application 3 1 2 3 4 5 
 [ [1,2,3], [4,5] ]
 ```
 
 ```
-> java net.adneom.test.Application 1 1 2 3 4 5 
+> java -cp ./target/classes net.adneom.test.Application 1 1 2 3 4 5 
 [ [1], [2], [3], [4], [5] ]
 ```
 
 ```
-> java net.adneom.test.Application 2 1 2 3 4 5 6 
+> java -cp ./target/classes net.adneom.test.Application 2 1 2 3 4 5 6 
 [ [1,2], [3,4], [5,6] ]
 ```
 
